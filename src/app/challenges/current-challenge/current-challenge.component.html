@@ -4,8 +4,12 @@
         hint="Challenge title"
     ></TextField>
     <Button
+        class="btn"
         text="Set Challenge"
         (tap)="onSetChallenge()"
     ></Button>
-    <Label [text]="currentChallenge"></Label>
+    <Label
+        [text]="currentChallenge"
+        class="title"
+    ></Label>
 </StackLayout>
