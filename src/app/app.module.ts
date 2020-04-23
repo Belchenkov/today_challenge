@@ -5,8 +5,6 @@ import { NativeScriptFormsModule } from "nativescript-angular";
 
 import { AppComponent } from "./app.component";
 import { CurrentChallengeComponent } from "~/app/challenges/current-challenge/current-challenge.component";
-import { StackComponent } from './layouts/stack/stack.component';
-import { FlexboxComponent } from './layouts/flexbox/flexbox.component';
 
 @NgModule({
     bootstrap: [
@@ -19,9 +17,7 @@ import { FlexboxComponent } from './layouts/flexbox/flexbox.component';
     ],
     declarations: [
         AppComponent,
-        CurrentChallengeComponent,
-        StackComponent,
-        FlexboxComponent
+        CurrentChallengeComponent
     ],
     providers: [],
     schemas: [
