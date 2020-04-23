@@ -1,0 +1,25 @@
+TextField {
+    width: 66%;
+}
+
+Button {
+    width: 33%;
+}
+
+.title {
+    font-size: 26;
+    text-align: center;
+    color: darkslateblue;
+    font-weight: bold;
+    margin-top: 10;
+}
+
+.btn {
+    background: darkslateblue;
+    border-width: 1;
+    border-color: darkslateblue;
+    color: white;
+    padding: 5 10;
+    border-radius: 30%;
+    margin: 5 0;
+}
