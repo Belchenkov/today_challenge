@@ -2,16 +2,16 @@
         [items]="challenges"
         (itemTap)="onItemTap($event)"
 >
-    <ng-template>
-        <GridLayout rows="40,auto" columns="50,*">
+    <ng-template let-challenge="item" let-i="index">
+        <GridLayout rows="40,20" columns="50,*">
             <Label
-                    text="Item"
+                    [text]="i"
                     row="0"
                     col="0"
                     rowSpan="2"
             ></Label>
             <Label
-                    text="Item content"
+                    [text]="challenge"
                     row="0"
                     col="1"
             ></Label>
