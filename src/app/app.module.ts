@@ -6,6 +6,8 @@ import { NativeScriptFormsModule } from "nativescript-angular";
 import { AppComponent } from "./app.component";
 import { CurrentChallengeComponent } from "~/app/challenges/current-challenge/current-challenge.component";
 import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component';
+import { AuthComponent } from './auth/auth.component';
+import { TodayComponent } from './challenges/today/today.component';
 
 @NgModule({
     bootstrap: [
@@ -19,7 +21,9 @@ import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-ed
     declarations: [
         AppComponent,
         CurrentChallengeComponent,
-        ChallengeEditComponent
+        ChallengeEditComponent,
+        AuthComponent,
+        TodayComponent
     ],
     providers: [],
     schemas: [
