@@ -8,6 +8,7 @@ import { CurrentChallengeComponent } from "~/app/challenges/current-challenge/cu
 import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component';
 import { AuthComponent } from './auth/auth.component';
 import { TodayComponent } from './challenges/today/today.component';
+import { AppRoutingModule } from "~/app/app-routing.module";
 
 @NgModule({
     bootstrap: [
@@ -16,7 +17,8 @@ import { TodayComponent } from './challenges/today/today.component';
     imports: [
         NativeScriptModule,
         FormsModule,
-        NativeScriptFormsModule
+        NativeScriptFormsModule,
+        AppRoutingModule
     ],
     declarations: [
         AppComponent,
