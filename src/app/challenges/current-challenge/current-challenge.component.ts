@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { RouterExtensions } from "nativescript-angular";
 
 @Component({
     selector: 'ns-current-challenge',
@@ -8,7 +9,15 @@ import { Component } from "@angular/core";
 })
 export class CurrentChallengeComponent {
 
-    constructor() {
+    constructor(
+        private router: RouterExtensions
+    ) {
+    }
+
+    onEdit() {
+        this.router.navigate(['/edit-challenge'], {
+            transition: { name: 'slideLeft' }
+        });
     }
 
 }

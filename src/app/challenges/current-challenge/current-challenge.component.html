@@ -1,4 +1,7 @@
-<ns-action-bar title="Current Challenge"></ns-action-bar>
+<ns-action-bar
+        title="Current Challenge"
+        [showBackButton]="false"
+></ns-action-bar>
 <StackLayout>
     <Label
         class="title"
@@ -7,6 +10,6 @@
     ></Label>
     <Button
             text="Edit"
-            nsRouterLink="/edit-challenge"
+            (tap)="onEdit()"
     ></Button>
 </StackLayout>
