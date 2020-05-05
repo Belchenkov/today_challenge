@@ -13,21 +13,25 @@ const routes: Routes = [
         path: '',
         component: AuthComponent
     },
-    {a
-        path: 'today',
-        component: TodayComponent
-    },
-    {
-        path: 'current-challenge',
-        component: CurrentChallengeComponent
-    },
     {
         path: 'edit-challenge',
         component: ChallengeEditComponent
     },
     {
         path: 'challenges',
-        component: ChallengeTabsComponent
+        component: ChallengeTabsComponent,
+        children: [
+            {
+                path: 'today',
+                component: TodayComponent,
+                outlet: 'today'
+            },
+            {
+                path: 'current-challenge',
+                component: CurrentChallengeComponent,
+                outlet: 'currentChallenge'
+            }
+        ]
     }
 ];
 
