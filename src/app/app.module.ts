@@ -10,6 +10,7 @@ import { AuthComponent } from './auth/auth.component';
 import { TodayComponent } from './challenges/today/today.component';
 import { AppRoutingModule } from "~/app/app-routing.module";
 import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component';
+import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-tabs.component';
 
 @NgModule({
     bootstrap: [
@@ -27,7 +28,8 @@ import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component'
         ChallengeEditComponent,
         AuthComponent,
         TodayComponent,
-        ActionBarComponent
+        ActionBarComponent,
+        ChallengeTabsComponent
     ],
     providers: [],
     schemas: [

@@ -6,13 +6,14 @@ import { AuthComponent } from "~/app/auth/auth.component";
 import { TodayComponent } from "~/app/challenges/today/today.component";
 import { CurrentChallengeComponent } from "~/app/challenges/current-challenge/current-challenge.component";
 import { ChallengeEditComponent } from "~/app/challenges/challenge-edit/challenge-edit.component";
+import { ChallengeTabsComponent } from "~/app/challenges/challenge-tabs/challenge-tabs.component";
 
 const routes: Routes = [
     {
         path: '',
         component: AuthComponent
     },
-    {
+    {a
         path: 'today',
         component: TodayComponent
     },
@@ -23,6 +24,10 @@ const routes: Routes = [
     {
         path: 'edit-challenge',
         component: ChallengeEditComponent
+    },
+    {
+        path: 'challenges',
+        component: ChallengeTabsComponent
     }
 ];
 
