@@ -9,9 +9,13 @@
             (tap)="onGoBack()"
     ></NavigationButton>-->
     <NavigationButton
+            *ngIf="android"
             icon="res://menu_black"
+            (tap)="onToggleMenu()"
     ></NavigationButton>
     <ActionItem
+            (tap)="onToggleMenu()"
+            *ngIf="!android"
             ios.position="left"
     >
         <Label text="MENU"></Label>
