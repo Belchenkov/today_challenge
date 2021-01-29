@@ -2,6 +2,12 @@
         [title]="title"
         (loaded)="onLoadedActionBar()"
 >
+    <StackLayout orientation="horizontal"
+                 ios:horizontalAlignment="center"
+                 android:horizontalAlignment="left">
+        <Image src="res://menu_black" class="action-image"></Image>
+        <Label text="ativeScript"  class="action-label"></Label>
+    </StackLayout>
 <!--    <NavigationButton
             text="Back"
             android.systemIcon="ic_menu_back"

@@ -1,15 +1,15 @@
-import { Injectable } from "@angular/core";
-import { BehaviorSubject } from "rxjs";
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class UiService {
-    private _toggleDrawer = new BehaviorSubject<void>(null);
+    private _drawerState = new BehaviorSubject<void>(null);
 
     get drawerState() {
-        return this._toggleDrawer.asObservable();
+        return this._drawerState.asObservable();
     }
 
     toggleDrawer() {
-        this._toggleDrawer.next();
+        this._drawerState.next(null);
     }
 }

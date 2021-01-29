@@ -4,6 +4,7 @@ import { Page } from "tns-core-modules/ui/page";
 import { RouterExtensions } from "nativescript-angular";
 import { UiService } from "~/app/shared/ui/ui.service";
 
+
 declare var android: any;
 
 @Component({
