@@ -1,37 +1,18 @@
-import { NgModule } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { Routes } from "@angular/router";
+import { NgModule } from '@angular/core'
+import { Routes } from '@angular/router'
+import { NativeScriptRouterModule } from '@nativescript/angular'
 
-import { AuthComponent } from "~/app/auth/auth.component";
-import { TodayComponent } from "~/app/challenges/today/today.component";
-import { CurrentChallengeComponent } from "~/app/challenges/current-challenge/current-challenge.component";
-import { ChallengeEditComponent } from "~/app/challenges/challenge-edit/challenge-edit.component";
+import { ItemsComponent } from './item/items.component'
+import { ItemDetailComponent } from './item/item-detail.component'
 
 const routes: Routes = [
-    {
-        path: '',
-        component: AuthComponent
-    },
-    {
-        path: 'today',
-        component: TodayComponent
-    },
-    {
-        path: 'current-challenge',
-        component: CurrentChallengeComponent
-    },
-    {
-        path: 'edit-challenge',
-        component: ChallengeEditComponent
-    }
-];
+  { path: '', redirectTo: '/items', pathMatch: 'full' },
+  { path: 'items', component: ItemsComponent },
+  { path: 'item/:id', component: ItemDetailComponent },
+]
 
 @NgModule({
-    imports: [
-        NativeScriptRouterModule.forRoot(routes)
-    ],
-    exports: [
-        NativeScriptRouterModule
-    ]
+  imports: [NativeScriptRouterModule.forRoot(routes)],
+  exports: [NativeScriptRouterModule],
 })
 export class AppRoutingModule {}

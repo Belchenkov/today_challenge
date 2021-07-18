@@ -1,3 +1,5 @@
-# Today's Challenge
+# NS Today Challenge
 
-> App on NativeScript (with Angular) "Today's Challenge"
+> Build app "Today Challenge" on NativeScript (Angular 12)
+
+

@@ -2,13 +2,6 @@
 hooks/
 node_modules/
 platforms/
-/.idea
-/.vscode
-debug.log
-# NativeScript Template
-*.js.map
-*.js
-!webpack.config.js
 
 # Logs
 logs
